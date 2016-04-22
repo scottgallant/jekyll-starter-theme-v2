@@ -1,8 +1,9 @@
 ---
+title: Page Two
 layout: default
-title:  Page Two
----
+draft: false
 
+---
 # {{ page.title }}
 
 

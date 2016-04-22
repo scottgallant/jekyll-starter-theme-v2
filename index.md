@@ -1,8 +1,9 @@
 ---
+title: Welcome
 layout: default
-title:  Welcome
----
+draft: false
 
+---
 # {{ page.title }}
 
 

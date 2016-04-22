@@ -1,36 +1,35 @@
-###########
-# site.title
-
-title:    'Jekyll Starter Theme V2'
-subtitle: 'Another Static Site Quick Starter Theme'
-
-
-## note:
-#  use site.path in your templates to make it work for both protocols e.g. http and https
-#  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
-#    note: for root path use empty string e.g. '' - do NOT include trailing slash e.g. /
-
-path:  '/jekyll-starter-theme-v2'
-url:   'http://henrythemes.github.io/jekyll-starter-theme-v2'
-
-
-nav:
-- { title: 'Welcome',              href: '/jekyll-starter-theme-v2/' }
-- { title: 'Page Two',             href: '/jekyll-starter-theme-v2/two.html' }
-- { title: 'Page Three',           href: '/jekyll-starter-theme-v2/three.html' }
-- { title: 'Questions? Comments?', href: 'http://groups.google.com/group/wwwmake' }
-- { title: 'About',                href: 'https://github.com/henrythemes/jekyll-starter-theme-v2' }
-
-
-#########################
-# more settings
-
-markdown: kramdown
-
+---
 sass:
   sass_dir: css
   style: expanded
-
+nav:
+- title: Welcome
+  href: "/jekyll-starter-theme-v2/"
+- title: Page Two
+  href: "/jekyll-starter-theme-v2/two.html"
+- title: Page Three
+  href: "/jekyll-starter-theme-v2/three.html"
+- title: Questions? Comments?
+  href: http://groups.google.com/group/wwwmake
+- title: About
+  href: https://github.com/henrythemes/jekyll-starter-theme-v2
+url: http://wwbbxm3nes6gma.preview.forestry.io
+path: "/jekyll-starter-theme-v2"
+subtitle: Another Static Site Quick Starter Theme
+title: Jekyll Starter Theme V2
+kramdown:
+  auto_ids: true
+  toc_levels: 1..6
+  entity_output: as_char
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  input: GFM
+  hard_wrap: false
+  footnote_nr: '1'
+port: 4000
 exclude:
 - README.md
-
+- vendor
+collections:
+  posts:
+    output: true
+    permalink: "/:categories/:year/:month/:day/:title:output_ext"
